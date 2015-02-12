@@ -1,0 +1,89 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 2013
+VisualStudioVersion = 12.0.31101.0
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WebApplication", "WebApplication\WebApplication.csproj", "{FBE2F0D2-E1D7-4252-B1A3-6A7FD562AC9B}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "PublishScripts", "PublishScripts", "{9AF983E1-20BE-45D1-9C84-492C4E77035A}"
+	ProjectSection(SolutionItems) = preProject
+		PublishScripts\AzureWebsitePublishModule.psm1 = PublishScripts\AzureWebsitePublishModule.psm1
+		PublishScripts\Publish-WebApplicationWebsite.ps1 = PublishScripts\Publish-WebApplicationWebsite.ps1
+	EndProjectSection
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Configurations", "Configurations", "{7C7F97D5-D36C-43C1-BCFE-51000AA65C33}"
+	ProjectSection(SolutionItems) = preProject
+		PublishScripts\Configurations\WebApplication-WAWS-dev.json = PublishScripts\Configurations\WebApplication-WAWS-dev.json
+	EndProjectSection
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = ".nuget", ".nuget", "{B43098C7-20F6-4017-89B6-A07BCF594330}"
+	ProjectSection(SolutionItems) = preProject
+		.nuget\packages.config = .nuget\packages.config
+	EndProjectSection
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WebJob", "WebJob\WebJob.csproj", "{56B2459B-51C2-4C75-BA80-8B36908EDF53}"
+EndProject
+Project("{CC5FD16D-436D-48AD-A40C-5A424C6E3E79}") = "CloudService", "CloudService\CloudService.ccproj", "{F6AB6C4A-8FD2-44F8-BD4B-AF76D606DC31}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WorkerRole", "WorkerRole\WorkerRole.csproj", "{78F9B3CB-1EBB-40FA-8689-DD21514D20A9}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DocumentDB", "DocumentDB\DocumentDB.csproj", "{D351D318-59B2-412B-AD46-04B72D2E5817}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BlobStorage", "BlobStorage\BlobStorage.csproj", "{E7C620EB-C8E4-4680-971C-A9756BDDA9E9}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TableStorage", "TableStorage\TableStorage.csproj", "{DAF66D51-1E5C-42EF-886B-B3E78D0CA0B3}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "RedisCache", "RedisCache\RedisCache.csproj", "{A72BE3A6-2B54-4BD4-96D3-9F536B7FF37B}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Debugging", "Debugging\Debugging.csproj", "{B7E2D4E9-45CA-4140-B977-8ED43163609B}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{FBE2F0D2-E1D7-4252-B1A3-6A7FD562AC9B}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{FBE2F0D2-E1D7-4252-B1A3-6A7FD562AC9B}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{FBE2F0D2-E1D7-4252-B1A3-6A7FD562AC9B}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{FBE2F0D2-E1D7-4252-B1A3-6A7FD562AC9B}.Release|Any CPU.Build.0 = Release|Any CPU
+		{56B2459B-51C2-4C75-BA80-8B36908EDF53}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{56B2459B-51C2-4C75-BA80-8B36908EDF53}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{56B2459B-51C2-4C75-BA80-8B36908EDF53}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{56B2459B-51C2-4C75-BA80-8B36908EDF53}.Release|Any CPU.Build.0 = Release|Any CPU
+		{F6AB6C4A-8FD2-44F8-BD4B-AF76D606DC31}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{F6AB6C4A-8FD2-44F8-BD4B-AF76D606DC31}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{F6AB6C4A-8FD2-44F8-BD4B-AF76D606DC31}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{F6AB6C4A-8FD2-44F8-BD4B-AF76D606DC31}.Release|Any CPU.Build.0 = Release|Any CPU
+		{78F9B3CB-1EBB-40FA-8689-DD21514D20A9}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{78F9B3CB-1EBB-40FA-8689-DD21514D20A9}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{78F9B3CB-1EBB-40FA-8689-DD21514D20A9}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{78F9B3CB-1EBB-40FA-8689-DD21514D20A9}.Release|Any CPU.Build.0 = Release|Any CPU
+		{D351D318-59B2-412B-AD46-04B72D2E5817}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{D351D318-59B2-412B-AD46-04B72D2E5817}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{D351D318-59B2-412B-AD46-04B72D2E5817}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{D351D318-59B2-412B-AD46-04B72D2E5817}.Release|Any CPU.Build.0 = Release|Any CPU
+		{E7C620EB-C8E4-4680-971C-A9756BDDA9E9}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{E7C620EB-C8E4-4680-971C-A9756BDDA9E9}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{E7C620EB-C8E4-4680-971C-A9756BDDA9E9}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{E7C620EB-C8E4-4680-971C-A9756BDDA9E9}.Release|Any CPU.Build.0 = Release|Any CPU
+		{DAF66D51-1E5C-42EF-886B-B3E78D0CA0B3}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{DAF66D51-1E5C-42EF-886B-B3E78D0CA0B3}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{DAF66D51-1E5C-42EF-886B-B3E78D0CA0B3}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{DAF66D51-1E5C-42EF-886B-B3E78D0CA0B3}.Release|Any CPU.Build.0 = Release|Any CPU
+		{A72BE3A6-2B54-4BD4-96D3-9F536B7FF37B}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{A72BE3A6-2B54-4BD4-96D3-9F536B7FF37B}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{A72BE3A6-2B54-4BD4-96D3-9F536B7FF37B}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{A72BE3A6-2B54-4BD4-96D3-9F536B7FF37B}.Release|Any CPU.Build.0 = Release|Any CPU
+		{B7E2D4E9-45CA-4140-B977-8ED43163609B}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{B7E2D4E9-45CA-4140-B977-8ED43163609B}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{B7E2D4E9-45CA-4140-B977-8ED43163609B}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{B7E2D4E9-45CA-4140-B977-8ED43163609B}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{7C7F97D5-D36C-43C1-BCFE-51000AA65C33} = {9AF983E1-20BE-45D1-9C84-492C4E77035A}
+	EndGlobalSection
+EndGlobal
